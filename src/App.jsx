@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch('http://localhost:8000/products');
+        const res = await fetch('/api/products');
         if (!res.ok) throw new Error('Failed to fetch products');
         const data = await res.json();
         setProducts(data);
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className='max-w h-screen p-16 space-y-6'>
-      <h1 className='text-3xl font-bold'>Kenki shoppng cart</h1>
+      <h1 className='text-3xl text-green-500 uppercase font-bold'>Kenki shoppng cart</h1>
       {loading && <p>Loading...</p>}
       {error && <p>{error} No data was fetched</p>}
      <ProductList products={products} />
