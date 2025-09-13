@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
       <p className='text-gray-500 text-sm mb-2'>{product.description}</p>
       <p className='font-bold text-lg'>${product.price.toFixed(2)}</p>
 
-      <button className='bg-blue-600 text-white mt-3 px-4 py-2 rounded transition hover:bg-blue-700'>
+      <button className='bg-green-600 text-white mt-3 px-4 py-2 rounded transition hover:bg-blue-700'>
         Add To Cart
       </button>
     </div>
