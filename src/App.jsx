@@ -1,10 +1,12 @@
+import Header from "./components/Header";
 import ProductList from './components/ProductList';
 
 function App() {
   return (
     <div className='max-w h-screen p-16 space-y-6'>
+      <Header/>
       <h1 className='text-3xl text-green-800 uppercase font-bold'>
-        Kenki shoppng cart
+         catalogue
       </h1>
 
       <ProductList />
